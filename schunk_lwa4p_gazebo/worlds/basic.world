@@ -1,12 +1,20 @@
 <?xml version="1.0" ?>
 <sdf version="1.4">
   <world name="default">
+
     <include>
       <uri>model://ground_plane</uri>
     </include>
+
     <include>
       <uri>model://sun</uri>
     </include>
+
+	<include>
+      <uri>model://add_image</uri>
+	  <pose> -2 0 0.5 0 1.57079 3.141592 </pose> 
+    </include>
+
     <physics type='ode'>
       <ode>
         <solver>
@@ -26,5 +34,6 @@
       <real_time_update_rate>100</real_time_update_rate>
       <gravity>0 0 -9.8</gravity>
     </physics>
+
   </world>
 </sdf>

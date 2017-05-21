@@ -1,0 +1,19 @@
+material add_image/image
+{
+	receive_shadows on	
+	technique
+	{
+		pass
+		{
+			ambient 0.8 0.8 0.8 1.0
+			diffuse 1.0 1.0 1.0 1.0
+			specular 0.0 0.0 0.0 1.0
+			emissive 0.0 0.0 0.0 0.0
+
+			texture_unit
+			{
+				texture face.png
+			}
+		}
+	}
+}
