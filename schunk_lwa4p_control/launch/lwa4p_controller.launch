@@ -7,7 +7,7 @@
 
   <!-- load the controllers -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
-    output="screen" ns="/lwa4p" args="joint_state_controller  
+    output="screen" ns="/lwa4p_blue" args="joint_state_controller  
       arm_1_joint_pos_controller
       arm_2_joint_pos_controller
       arm_3_joint_pos_controller
@@ -17,12 +17,11 @@
 
       "/>
 
-
   <!-- convert joint states to TF transforms for rviz, etc -->
-  <!--node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+  <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
     respawn="false" output="screen">
     <remap from="/joint_states" to="/lwa4p/joint_states"/>
-  </node-->
+  </node> -->
 
 </launch>
 

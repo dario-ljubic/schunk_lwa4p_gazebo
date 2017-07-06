@@ -11,7 +11,7 @@
       <collision name="collision">
          <geometry>
            <box>
-             <size>1 1 0.005</size>  <!-- adjust this to whatever you want -->
+             <size>0.3 0.3 0.005</size>  <!-- adjust this to whatever you want -->
           </box>
          </geometry>
        </collision>
@@ -20,7 +20,7 @@
            <cast_shadows>false</cast_shadows>
            <geometry>
              <box>
-                <size>1 1 0.005</size>  <!-- same size as collision -->
+                <size>0.3 0.3 0.005</size>  <!-- same size as collision -->
             </box>
           </geometry>
           <material>
